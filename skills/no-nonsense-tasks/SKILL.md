@@ -61,11 +61,13 @@ Override with: `export NO_NONSENSE_TASKS_DB=/path/to/tasks.db`
 ```
 
 **Options:**
+
 - `-d, --description TEXT` - Task description
 - `-t, --tags TAGS` - Comma-separated tags
 - `-s, --status STATUS` - Task status (default: backlog)
 
 **Example:**
+
 ```bash
 ./scripts/task_add.sh "Deploy to prod" --description "Deploy v2.0" --tags "deploy,critical" --status todo
 ```
@@ -77,6 +79,7 @@ Override with: `export NO_NONSENSE_TASKS_DB=/path/to/tasks.db`
 ```
 
 **Examples:**
+
 ```bash
 ./scripts/task_list.sh              # All tasks
 ./scripts/task_list.sh --status todo
@@ -95,6 +98,7 @@ Override with: `export NO_NONSENSE_TASKS_DB=/path/to/tasks.db`
 ```
 
 **Example:**
+
 ```bash
 ./scripts/task_move.sh 7 --status in-progress
 ```
@@ -106,6 +110,7 @@ Override with: `export NO_NONSENSE_TASKS_DB=/path/to/tasks.db`
 ```
 
 **Options:**
+
 - `--title TEXT` - Update title
 - `-d, --description TEXT` - Update description
 - `-t, --tags TAGS` - Update tags (comma-separated)
@@ -118,6 +123,7 @@ Override with: `export NO_NONSENSE_TASKS_DB=/path/to/tasks.db`
 ```
 
 **Example:**
+
 ```bash
 ./scripts/task_tag.sh 8 --tags "urgent,bug,frontend"
 ```
